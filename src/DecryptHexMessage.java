@@ -23,11 +23,12 @@ public class DecryptHexMessage {
         String[] arrSplit = ja.split("0x");
         for (int x=1; x < arrSplit.length; x++)
         {
-            ar.add("0x" +arrSplit[x]);
+            String number = arrSplit[x];
+            System.out.println(number);
+            System.out.println(""+Integer.valueOf(number,16));
+//            ar.add("0x" +arrSplit[x]);
         }
-        String[] arrSplits = ar.toString().split(",");
-        arrSplits = arrSplits.toString().split("]");
-        
+
 
 
 
